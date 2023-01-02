@@ -55,7 +55,7 @@
 #### Update an existing post
 
 ```http
-  PATCH /api/post/update/${id}
+  POST /api/post/update/${id}
 ```
 
 | Parameter | Type     | Description                       |
