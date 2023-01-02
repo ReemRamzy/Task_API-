@@ -25,8 +25,25 @@ use App\Http\Controllers\RoleController;
 
 // return tasks index
 Route::resource('tasks', TaskController::class);
+//create task
+Route::post('task/create' , [TaskController::class ,'store']);
+//update task status
+Route::post('task/status/{id}' , [TaskController::class ,'update']);
+
+////////////
+
 // return posts index
 Route::resource('posts', PostController::class);
+//create post
+Route::post('post/create' , [PostController::class ,'store']);
+//update post
+Route::post('post/update/{id}' , [PostController::class ,'update']);
+//delete
+Route::delete('post/delete/{id}' , [PostController::class ,'destroy']);
+
+
+//////////////
+
 // register
 Route::post('register' , [RegisterationController::class ,'store']);
 // login
