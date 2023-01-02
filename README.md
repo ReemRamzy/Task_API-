@@ -16,7 +16,7 @@
 #### Create a new task
 
 ```http
-  POST /api/tasks
+  POST /api/task/create
 ```
 
 | Parameter | Type     | Description                       |
@@ -26,7 +26,7 @@
 #### Check task as done (is_done == 1)
 
 ```http
-  PATCH /api/tasks/${id}
+  POST /api/task/status/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -44,7 +44,7 @@
 #### Create a new post
 
 ```http
-  POST /api/posts
+  POST /api/post/create
 ```
 
 | Parameter | Type     | Description                       |
@@ -55,7 +55,7 @@
 #### Update an existing post
 
 ```http
-  PATCH /api/posts/${id}
+  PATCH /api/post/update/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -68,7 +68,7 @@
 
 
 ```http
-  DELETE /api/posts/${id}
+  DELETE /api/post/delete/${id}
 ```
 
 | Parameter | Type     | Description                       |
